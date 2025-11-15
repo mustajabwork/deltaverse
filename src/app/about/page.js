@@ -3,15 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const About = () => {
   return (
-    <main
-      className={`${inter.variable} font-sans bg-linear-to-b from-[#0a0a0a] via-[#111111] to-[#1a1a1a] text-neutral-200 min-h-screen p-6`}
-    >
+    <main className="p-6">
       <section className="max-w-6xl mx-auto">
         {/* Header / Hero */}
         <motion.header

@@ -1,13 +1,13 @@
-# 🌊 Delta — Mustajab’s Personal Website
+# 🌊 Deltaverse — Mustajab’s Personal Website
 
-Welcome to **Delta**, my digital space — a blend of **portfolio**, **blog**, **habit tracker**, and **personal lab**.  
+Welcome to **Deltaverse**, my digital space — a blend of **portfolio**, **blog**, **habit tracker**, and **personal lab**.  
 This is where I document my journey, share ideas, showcase projects, do random things just like we do at home, and experiment with new technologies.
 
 ---
 
-## 🚀 About Delta
+## 🚀 About Deltaverse
 
-**Delta** represents change — the small, constant improvements that lead to transformation.  
+**Deltaverse** represents change — the small, constant improvements that lead to transformation.  
 This website reflects that philosophy: it evolves as I learn, build, and grow.
 
 ### ✨ What You’ll Find Here
@@ -32,7 +32,7 @@ This website reflects that philosophy: it evolves as I learn, build, and grow.
 
 ## 🌐 Live Website
 
-👉 [Visit Delta](https://last-date.vercel.app/)
+👉 [Visit Deltaverse](https://last-date.vercel.app/)
 
 ---
 
