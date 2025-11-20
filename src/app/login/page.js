@@ -1,8 +1,6 @@
 "use client";
-export const dynamic = "force-dynamic";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import { Bebas_Neue } from "next/font/google";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });
@@ -10,12 +8,13 @@ const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 const Login = () => {
   const [password, setPassword] = useState("");
   const [redirectTo, setRedirectTo] = useState("/");
-  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const redirectParam = searchParams.get("redirectTo");
+    // Parse query params from URL manually
+    const params = new URLSearchParams(window.location.search);
+    const redirectParam = params.get("redirectTo");
     if (redirectParam) setRedirectTo(redirectParam);
-  }, [searchParams]);
+  }, []);
 
   const handleLogin = () => {
     if (password === process.env.NEXT_PUBLIC_DELTA_PASSWORD) {
