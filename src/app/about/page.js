@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <main className="p-6">
+    <main className="p-6 font-sans bg-linear-to-b from-[#0a0a0a] via-[#111111] to-[#1a1a1a] text-neutral-200 min-h-screen">
       <section className="max-w-6xl mx-auto">
         {/* Header / Hero */}
         <motion.header

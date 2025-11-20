@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -11,9 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} font-sans bg-linear-to-b from-[#0a0a0a] via-[#111111] to-[#1a1a1a] text-neutral-200 min-h-screen antialiased`}
-      >
+      <body className={`${inter.variable} min-h-screen antialiased`}>
+        <Header />
         {children}
       </body>
     </html>

@@ -9,7 +9,7 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
 
 const Home = () => {
   return (
-    <main className="flex flex-col gap-8 justify-center items-center min-h-screen w-full p-6 bg-linear-to-b from-[#0a0a0a] via-[#111111] to-[#1a1a1a]">
+    <main className="flex flex-col gap-8 justify-center items-center min-h-screen w-full p-6">
       <h1 className="font-extralight text-center text-neutral-200 w-1/2">
         “All my changes, all my chapters — they live here.”
       </h1>
