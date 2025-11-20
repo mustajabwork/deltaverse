@@ -1,4 +1,6 @@
 "use client";
+export const dynamic = "force-dynamic";
+
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { Bebas_Neue } from "next/font/google";
@@ -17,7 +19,6 @@ const Login = () => {
 
   const handleLogin = () => {
     if (password === process.env.NEXT_PUBLIC_DELTA_PASSWORD) {
-      // browser-only code is fine here
       document.cookie = "token=loggedin; path=/";
       window.location.href = redirectTo;
     } else {
