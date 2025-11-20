@@ -1,19 +1,25 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { Bebas_Neue } from "next/font/google";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 
-export default function Login() {
+const Login = () => {
   const [password, setPassword] = useState("");
+  const [redirectTo, setRedirectTo] = useState("/");
   const searchParams = useSearchParams();
-  const redirectTo = searchParams.get("redirectTo") || "/";
+
+  useEffect(() => {
+    const redirectParam = searchParams.get("redirectTo");
+    if (redirectParam) setRedirectTo(redirectParam);
+  }, [searchParams]);
 
   const handleLogin = () => {
     if (password === process.env.NEXT_PUBLIC_DELTA_PASSWORD) {
+      // browser-only code is fine here
       document.cookie = "token=loggedin; path=/";
-      window.location.href = redirectTo; // correct redirect
+      window.location.href = redirectTo;
     } else {
       alert("Wrong password!");
       setPassword("");
@@ -45,4 +51,6 @@ export default function Login() {
       </div>
     </div>
   );
-}
+};
+
+export default Login;
